@@ -82,3 +82,140 @@ for (let i = 0; i < names.length; i++) {
 console.log(arrayLengths) // logs new array
 console.log('---------End of Step 5-------------') // Separating Info in Console
 console.log('---------Start of step 6-------------') // Separating Info in Console
+
+let totalNames = 0; //Variable to hold total of arrayLengths
+
+for (let i = 0; i < arrayLengths.length; i++) {
+    totalNames += arrayLengths[i]
+} // Loop to itterate over array and add values to totalNames
+
+console.log(`Total: ${totalNames}`) //Logging total to console
+console.log('---------End of Step 6-------------') // Separating Info in Console
+console.log('---------Start of step 7-------------') // Separating Info in Console
+
+function concatWord(word, n) {
+    let newWord = '';
+    for (let i = 0; i < n; i++) {
+        newWord += word
+    } //function that takes in a word and number value and returns the word concatinated 'n' times
+    return newWord;
+}
+
+console.log(concatWord('hello', 3)) // Logging results to the console
+
+console.log('---------End of Step 7-------------') // Separating Info in Console
+console.log('---------Start of step 8-------------') // Separating Info in Console
+
+let fullName = (firstName, lastName) => `${firstName} ${lastName}` // Arrow funciton with implicit return
+
+console.log(fullName('Santa', 'Claus')) //Logging result to the console
+console.log('---------End of Step 8-------------') // Separating Info in Console
+console.log('---------Start of step 9-------------') // Separating Info in Console
+
+let testArray = [5, 2, 1, 8, 4, 99]; //Starting array to pass through funciton
+
+function arrayTotal(arr1) {
+    totalValue = 0;
+    for (element of arr1) {
+        totalValue += element
+    }
+    if (totalValue > 100) {
+        return true;
+    } else {
+        return false;
+    }
+} //function that iterates over an array then checks if totalValue is great than 100.
+
+console.log(arrayTotal(testArray)) //logging test to the console
+console.log('---------End of Step 9-------------') // Separating Info in Console
+console.log('---------Start of step 10-------------') // Separating Info in Console
+
+// let testArray = [5, 2, 1, 8, 4, 99]; //Starting array to pass through funciton
+
+function averageOfArray(arr1) {
+    let totalValue = 0;
+    for (number of arr1) {
+        totalValue += number
+    }
+    return totalValue / arr1.length
+} //function that adds all values of testArray and devices by the length of the array.
+
+console.log(averageOfArray(testArray)) //logging results to console
+console.log('---------End of Step 10-------------') // Separating Info in Console
+console.log('---------Start of step 11-------------') // Separating Info in Console
+
+let testArray1 = [1, 8, 2, 9, 7, 3,] //starting array 1. average = 5
+let testArray2 = [5, 5, 4, 6, 3] // starting array 2. average = 4.6
+
+function averageOfTwoArray(arr1, arr2) {
+    let averageArray1 = 0;
+    let averageArray2 = 0;
+    for (number of arr1) {
+        averageArray1 += number
+    }
+
+    averageArray1 = averageArray1 / arr1.length
+
+    for (number of arr2) {
+        averageArray2 += number
+    }
+
+    averageArray2 = averageArray2 / arr2.length
+
+    if (averageArray1 > averageArray2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(averageOfTwoArray(testArray1, testArray2)) // logging results to console
+console.log('---------End of Step 11-------------') // Separating Info in Console
+console.log('---------Start of step 12-------------') // Separating Info in Console
+
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    if (isHotOutside && moneyInPocket > 10.50){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(willBuyDrink(false, 11.50)) //logging output to console
+console.log('---------End of Step 12-------------') // Separating Info in Console
+console.log('---------Start of step 13-------------') // Separating Info in Console
+
+let fate = Math.floor(Math.random() * 8 + 1) // 'fate' is a random number generator
+
+function letFateDecide(param1) {
+    switch (param1) {
+        case 1:
+            console.log('Team 1 has been chosen!')
+            break;
+        case 2:
+            console.log('Team 2 has been chosen!')
+            break;
+        case 3:
+            console.log('Team 3 has been chosen!')
+            break;
+        case 4:
+            console.log('Team 4 has been chosen!')
+            break;
+        case 5:
+            console.log('Team 5 has been chosen!')
+            break;
+        case 6:
+            console.log('Team 6 has been chosen!')
+            break;
+        case 7:
+            console.log('Team 7 has been chosen!')
+            break;
+        case 8:
+            console.log('Team 8 has been chosen!')
+            break;
+    }
+} // function that takes in an argument and tells a different team they have been chosen. 
+
+letFateDecide(fate); //executing my function
+
+//I use a similar function to this at work when I need get get one of my teams to do something and I tell them I will let 'fate' decide. 
