@@ -145,7 +145,7 @@ console.log('---------End of Step 10-------------') // Separating Info in Consol
 console.log('---------Start of step 11-------------') // Separating Info in Console
 
 let testArray1 = [1, 8, 2, 9, 7, 3,] //starting array 1. average = 5
-let testArray2 = [5, 5, 4, 6, 3] // starting array 2. average = 4.6
+let testArray2 = [5, 5, 4, 6, 3,] // starting array 2. average = 4.6
 
 function averageOfTwoArray(arr1, arr2) {
     let averageArray1 = 0;
@@ -181,7 +181,7 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
     }
 }
 
-console.log(willBuyDrink(false, 11.50)) //logging output to console
+console.log(willBuyDrink(true, 10.50)) //logging output to console
 console.log('---------End of Step 12-------------') // Separating Info in Console
 console.log('---------Start of step 13-------------') // Separating Info in Console
 
