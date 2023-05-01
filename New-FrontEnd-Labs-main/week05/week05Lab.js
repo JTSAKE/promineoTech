@@ -288,10 +288,18 @@ class List {
     this.movies.push(movie);
   }
 
+  // displayMovies() {
+  //   for (let movie of this.movies) {
+  //     console.log(`${movie.title} - ${movie.director}`);
+  //   }
+  // }
+
   displayMovies() {
+    let movieArray = [];
     for (let movie of this.movies) {
-      console.log(`${movie.title} - ${movie.director}`);
+      movieArray.push({title: movie.title, director: movie.director})
     }
+    return movieArray;
   }
 }
 
@@ -305,6 +313,6 @@ let list = new List();
 list.addMovie(movie1);
 list.addMovie(movie2);
 
-list.displayMovies();
+console.log(list.displayMovies());
 
 console.log(`-----------Finished------------`)
