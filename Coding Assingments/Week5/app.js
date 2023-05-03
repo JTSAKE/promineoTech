@@ -6,14 +6,13 @@ class VideoGame {
     }
 
     describe() {
-        return `${this.title} is a ${this.gameType} ${this.genre}.`;
+        return `${this.title} is a ${this.gameType} ${this.genre} game.`;
     }
 }
 
 class MainMenu {
     constructor() {
         this.gameList = [];
-        this.selectedGame = null;
     }
 
     showMainMenuOptions() {
@@ -22,6 +21,7 @@ class MainMenu {
             1) Add Game
             2) View Game List
             3) Delete Game
+            4) Pick Game from List
         `);
     }
 
@@ -39,6 +39,8 @@ class MainMenu {
                 case '3':
                     this.deleteGame();
                     break;
+                case '4':
+                    this.pickGame();
                 default:
                     selection = 0;
             }
@@ -49,15 +51,15 @@ class MainMenu {
 
     addGame() {
         let gameTitle = prompt('Enter a Title of a Video Game');
-        let gameGenre = prompt('What Genre is this Game?');
-        let gameType = prompt('Is it Single Player or Multiplayer?');
+        let gameGenre = prompt('What Genre is this Game?')
+        let gameType = prompt('Is this game Single Player or Multiplayer?')
         this.gameList.push(new VideoGame(gameTitle, gameGenre, gameType));
     }
 
     viewGames() {
         let gameString = '';
         for (let i = 0; i < this.gameList.length; i++){
-            gameString += this.gameList[i]
+            gameString += i + ' ) ' + this.gameList[i].title + '\n'
         }
         alert(gameString);
     }
@@ -67,6 +69,13 @@ class MainMenu {
         if (index > -1 && index < this.gameList.length) {
             this.gameList.splice(index, 1);
         }
+    }
+
+    pickGame() {
+        let number = Math.floor(Math.random() * this.gameList.length);
+        let gameChoice = this.gameList[number].title;
+        let gameDesciption = this.gameList[number].describe();
+        alert(gameChoice + '\n' + gameDesciption);
     }
 }
 
