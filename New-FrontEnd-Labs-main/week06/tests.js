@@ -61,4 +61,23 @@ describe('Week 6 Lab Tests:', () => {
     })
   })
   /*--------------------------NEW TESTS BELOW-------------------------------*/
+  describe('Array Question: Sort Array', () => {
+    it('#Should Sort the array "Array of Numbers"', () => {
+      let arrayOfNumbers = [1, 5, 3, 2, 4]
+      arrayOfNumbers = arrayOfNumbers.sort((a, b) => a - b)
+
+      expect(arrayOfNumbers).to.deep.equal([1, 2, 3, 4, 5])
+    });
+
+    it('Should throw an error if the variable is a const', () => {
+      const arrayOfNumbers = [1, 5, 3, 2, 4]
+      arrayOfNumbers = arrayOfNumbers.sort((a, b) => a - b)
+
+      expect(arrayOfNumbers).to.deep.equal([1, 2, 3, 4, 5])
+    })
+  })
+
+  describe('Manage My Wallet Example', () => {
+    it('Should ')
+  })
 })
