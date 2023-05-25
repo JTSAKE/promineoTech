@@ -1,0 +1,91 @@
+/* ----Body----- */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* -----NAV----- */
+nav {
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav h3 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+nav a {
+    text-decoration: none;
+    font-weight: 400;
+}
+nav a:hover {
+    color: white;
+    background-color: rgb(31, 0, 206);
+    border-radius: 50%;
+    padding: 5px;
+}
+nav form {
+    margin: 0 1% 0 0;
+    font-family: 500;
+}
+nav form button {
+    font-family: 'Roboto', sans-serif;
+}
+nav form button:hover {
+    color: white;
+    background-color: rgb(31, 0, 206);
+}
+/* -----Section----- */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+#profile-picture {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+.profile-section h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+.profile-section h2 {
+    margin: 10px 0;
+}
+.profile-section h3 {
+    font-size: 15px;
+    margin: 0;
+}
+/* -----Description----- */
+#description {
+    display: flex;
+    flex-direction: row;
+}
+#description1 {
+    width: 50%;
+}
+#description2 {
+    width: 50%;
+}
+/* -----Dog Section----- */
+.dog-section {
+    border-top: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 10;
+}
+.dog-section h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.dog-photos {
+    display: flex;
+    justify-content: center;
+}
+.dog-photos img {
+    margin: 10px;
+}

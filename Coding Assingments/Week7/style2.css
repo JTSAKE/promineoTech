@@ -1,0 +1,80 @@
+/* ----Body----- */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* -----NAV----- */
+nav {
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav h3 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+nav a {
+    text-decoration: none;
+    font-weight: 400;
+}
+nav a:hover {
+    color: white;
+    background-color: rgb(31, 0, 206);
+    border-radius: 50%;
+    padding: 5px;
+}
+nav form {
+    margin: 0 1% 0 0;
+    font-family: 500;
+}
+nav form button {
+    font-family: 'Roboto', sans-serif;
+}
+nav form button:hover {
+    color: white;
+    background-color: rgb(31, 0, 206);
+}
+/* -----Section----- */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+section h1 {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 40px 0;
+}
+section table th {
+    font-weight: 500;
+}
+section table img {
+    height: 350px;
+    margin: 10px;
+    width: 350px;
+}
+.image-container{
+    position: relative;
+}
+.image-container:hover .image-text {
+    opacity: 1;
+}
+.image-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15%;
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
