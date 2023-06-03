@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,23 +10,64 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">PromineoTech Week 9</span>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallary</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ProminoeoTech Week 9</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Username" aria-label="Username">
+                    <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
+                    <button class="btn btn-outline-success" type="submit">Login</button>
+                </form>
+            </div>
         </div>
-    </div>
     </nav>
+    <section class="container">
+        <div class="row">
+            <h2 class="display-2 text-center my-4">What is Web Development?</h2>
+            <p>
+                Web development is like building and designing the amazing websites and web apps you use every day. It's the process of creating the interactive and visually appealing online spaces that allow you to browse information, play games, connect with friends, and do so much more. Web developers use programming languages, like HTML, CSS, and JavaScript, to bring websites to life. They work behind the scenes to make sure everything looks good, works smoothly, and is easy to navigate. Web development is like constructing a virtual world where you can explore, learn, and have fun on the internet.
+            </p>
+            <img src="../assets/webDevImg.jpg" class="my-3" alt="Image of computers with the internet open">
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <h3 class="display-3 text-center my-3">HTML: The Bones</h3>
+            <p>
+                Web development involves using different technologies to create websites and web applications. One important technology is HTML, which is like the skeleton of a web page. It helps structure the content and text.
+            </p>
+            <img src="../assets/skeleton.jpg" class="my-3" alt="Image of Cartoon skeleton">
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <h3 class="display-3 my-3 text-center">CSS: The Skin</h3>
+            <p>
+                CSS is another essential technology in web development. It adds colors, fonts, and layouts to make the web page look good. CSS allows developers to customize the appearance of elements on a website, making it visually appealing and user-friendly.
+            </p>
+            <img src="../assets/skin.jpg" alt="Man waving">
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <h3 class="display-3 my-3 text-center">JavaScript: The Muscles</h3>
+            <p>
+                JavaScript is a key technology that makes websites interactive and dynamic. It enables developers to add functionality and interactivity to web pages. JavaScript can be used to create animations, handle user interactions, and update content dynamically without requiring a page refresh.
+            </p>
+            <img src="../assets/manExercising.jpg" alt="Man Excersising">
+        </div>
+    </section>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
