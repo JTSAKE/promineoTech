@@ -18,10 +18,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="index2.html">About Me</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -35,37 +35,67 @@
     <section class="container">
         <div class="row">
             <h2 class="display-2 text-center my-4">What is Web Development?</h2>
-            <p>
+            <p class="col-md-6 mb-md-5">
                 Web development is like building and designing the amazing websites and web apps you use every day. It's the process of creating the interactive and visually appealing online spaces that allow you to browse information, play games, connect with friends, and do so much more. Web developers use programming languages, like HTML, CSS, and JavaScript, to bring websites to life. They work behind the scenes to make sure everything looks good, works smoothly, and is easy to navigate. Web development is like constructing a virtual world where you can explore, learn, and have fun on the internet.
             </p>
-            <img src="../assets/webDevImg.jpg" class="my-3" alt="Image of computers with the internet open">
+            <img src="../assets/webDevImg.jpg" class="my-3 guideImage col-md-6 mb-md-5" alt="Image of computers with the internet open">
         </div>
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Technology</th>
+                        <th scope="col">Use</th>
+                        <th scope="col">Difficulty Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>HTML</td>
+                        <td>Set the structure of the website</td>
+                        <td>3/5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>CSS</td>
+                        <td>Set the style of the website</td>
+                        <td>4/5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>JavaScript</td>
+                        <td>Created functionality and logic on a website</td>
+                        <td>5/5</td>
+                    </tr>
+                </tbody>
+            </table>
     </section>
     <section class="container">
         <div class="row">
             <h3 class="display-3 text-center my-3">HTML: The Bones</h3>
-            <p>
+            <p class="col-md-6 fs-4 my-auto">
                 Web development involves using different technologies to create websites and web applications. One important technology is HTML, which is like the skeleton of a web page. It helps structure the content and text.
             </p>
-            <img src="../assets/skeleton.jpg" class="my-3" alt="Image of Cartoon skeleton">
+            <img src="../assets/skeleton.jpg" class="my-3 guideImage col-md-6" alt="Image of Cartoon skeleton">
         </div>
     </section>
     <section class="container">
         <div class="row">
-            <h3 class="display-3 my-3 text-center">CSS: The Skin</h3>
-            <p>
+            <h3 class="display-3 my-3 text-center mt-4">CSS: The Skin</h3>
+            <p class="col-md-6 fs-4 my-auto order-md-2">
                 CSS is another essential technology in web development. It adds colors, fonts, and layouts to make the web page look good. CSS allows developers to customize the appearance of elements on a website, making it visually appealing and user-friendly.
             </p>
-            <img src="../assets/skin.jpg" alt="Man waving">
+            <img src="../assets/skin.jpg" alt="Man waving" class="guideImage col-md-6 order-md-1 mb-4">
         </div>
     </section>
     <section class="container">
         <div class="row">
             <h3 class="display-3 my-3 text-center">JavaScript: The Muscles</h3>
-            <p>
+            <p class="col-md-6 fs-4 my-auto">
                 JavaScript is a key technology that makes websites interactive and dynamic. It enables developers to add functionality and interactivity to web pages. JavaScript can be used to create animations, handle user interactions, and update content dynamically without requiring a page refresh.
             </p>
-            <img src="../assets/manExercising.jpg" alt="Man Excersising">
+            <img src="../assets/manExercising.jpg" alt="Man Excersising" class="guideImage col-md-6">
         </div>
     </section>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
