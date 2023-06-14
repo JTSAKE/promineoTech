@@ -42,7 +42,14 @@ Part 1: Create a form with only JavaScript`)
            Do the same steps, appending a label/input for Email, and a submit button to your form.
  * ↓ YOUR CODE HERE ↓ */
 
-// console.log(myForm)
+let myForm = document.createElement('form');
+let myNameLabel = document.createElement('label');
+let myNameInput = document.createElement('input');
+console.log(myForm)
+console.log(myNameLabel)
+console.log(myNameInput)
+
+myNameLabel.innerHTML 
 //Question: Besides changing the innerHTML, what other HTML things can we change using JavaScript?
 //Answer:
 
