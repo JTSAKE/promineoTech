@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Discount App</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand">Games Sales App</span>
+            <span class="navbar-brand">API: <a href="https://apidocs.cheapshark.com" target="_blank">https://apidocs.cheapshark.com</a></span>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="" class= "row my-3">
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <label for="storeID" class="form-label">Online Store</label>
+                    <input type="text" class="form-control" id="storeID" placeholder="Enter Online Store">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <label for="Lorem" class="form-label">lorem ipsum</label>
+                    <input type="text" class="form-control" id="lorem" placeholder="lorem">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <label for="lorem" class="form-label">lorem ipsum</label>
+                    <input type="text" class="form-control" id="lorem" placeholder="lorem">
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <label for="lorem" class="form-label">lorem ipsum</label>
+                    <input type="text" class="form-control" id="lorem" placeholder="lorem">
+                </div>
+            <button class="btn btn-success col-6 mx-auto my-3" type="submit">Search</button>
+        </form>
+    </div>
+    <section class="container">
+        <div class="row gameShelf"></div>
+    </section>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
