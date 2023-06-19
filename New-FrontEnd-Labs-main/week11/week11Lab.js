@@ -40,16 +40,26 @@
  *
  * ↓ YOUR CODE HERE ↓ */
 
-let div = $('.put-here')
-let input = $('#input-value')
+// let div = $('.put-here');
+// let input = $('#input-value');
 
-function replaceTextInDiv() {
-  let newText = input.val()
-  div.text(newText)
-  input.val('')
-}
+// function replaceTextInDiv() {
+//   let newText = input.val()
+//   div.text(newText)
+//   input.val('')
+// }
 
-console.log($('#input-value').val())
+// ----- My Way -----
+let textDiv = $('.put-here');
+let input = $('#input-value');
+let button = document.querySelector('.submitButton');
+
+button.addEventListener('click', function () {
+  let newText = input.val();
+  textDiv.text(newText);
+  input.val('');
+})
+
 /*------------------------------------------------*/
 // Question 2: Before and After
 
@@ -136,6 +146,8 @@ $.get(JOKES_API_URL, (data) => {
 	*
 	* ↓ YOUR CODE HERE ↓ */
 
+  let randStudent = Math.floor(Math.random() * 20 + 1);
+
 $.get('http://localhost:3000/gradebook', (data) => console.log(data))
 
 $.get('http://localhost:3000/gradebook/7', (data) => {
@@ -144,7 +156,7 @@ $.get('http://localhost:3000/gradebook/7', (data) => {
     data.firstname + ' ' + data.lastname + ', Grade: ' + data.grade + '%'
   )
 })
-$.get('http://localhost:3000/gradebook/12', (data) => {
+$.get(`http://localhost:3000/gradebook/${randStudent}`, (data) => {
   console.log(data)
   $('.new').text(
     data.firstname + ' ' + data.lastname + ', Grade: ' + data.grade + '%'
@@ -162,12 +174,14 @@ $('.test').on('click', function () {
   let lname = $('#lastname').val()
   let grade = $('#grade').val()
 
-  $.postBtn('http://localhost:3000/gradebook', {
+  $.post('http://localhost:3000/gradebook', {
     firstname: fname,
     lastname: lname,
     grade: grade,
   })
 })
+
+// $.get('http://localhost:3000/gradebook', (data) => console.log(data))
 /*
  * Step 1: Recreate the POST method from above but instead use the BUTTON with a class name of "postBtn".
  * Step 2: Fill in the inputs with your first name, last name, and give yourself a grade.
