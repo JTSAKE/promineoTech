@@ -1,0 +1,5 @@
+.imgBaseSize {
+    height: 250px;
+    object-fit: contain;
+    width: 150px;
+}
