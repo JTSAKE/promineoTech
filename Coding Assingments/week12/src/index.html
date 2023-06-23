@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Money Management</title>
+</head>
+<body>
+    <h1 class="display-1 text-center">Money Management Tool</h1>
+    <section class="container mx-auto mt-5">
+        <h4 class="text-center mb-5">Please Enter Your Info Below.</h4>
+        <form action="" class="d-flex flex-row">
+            <div class="col-4 mx-2">
+                <label for="billName" class="form-label">Enter Bill Name:</label>
+                <input type="text" id="billName" class="form-control" placeholder="Idaho Power Bill" required>
+            </div>
+            <div class="col-4 mx-2">
+                <label for="billAmount" class="form-label">Enter Bill Amount:</label>
+                <input type="text" id="billAmount" class="form-control" placeholder="$50" required>
+            </div>
+            <div class="col-4 mx-2">
+                <label for="billDueDate" class="form-label">Enter Due Date:</label>
+                <input type="date" id="billDueDate" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary align-self-end" id="submitButton">Submit</button>
+        </form>
+    </section>
+    <section class="container mt-4 mx-auto">
+        <table id="outputDataTable" class="table border-bottom border-1 text-center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Bill Name:</th>
+                    <th scope="col">Bill Amount:</th>
+                    <th scope="col">Due Date:</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/Datejs/build/date.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
