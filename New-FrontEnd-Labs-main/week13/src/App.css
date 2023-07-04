@@ -1,0 +1,30 @@
+nav {
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li a {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 20%;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    background-color: gray;
+    border-color: gray;
+}
+
+section {
+    margin: 3% 0;
+    text-align: center;
+}
