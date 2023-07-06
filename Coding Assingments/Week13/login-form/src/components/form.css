@@ -1,5 +1,11 @@
 section {
-    width: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px;
+    height: 50%;
+    margin: 5% auto;
+    padding: 2% 0px;
+    width: 30%;
 }
 section h3 {
     text-align: center;
@@ -13,5 +19,6 @@ form {
     width: 50%;
 }
 form button {
+    box-shadow: 3px 3px;
     margin: 5px;
 }
