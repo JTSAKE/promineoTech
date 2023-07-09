@@ -13,18 +13,16 @@ export default class Post extends React.Component {
         };
     }
     render() {
-        let tempComments = this.state.comments;
-        setTimeout(() => this.setState({content: 'state updated', comments: []}, 
-        () => setTimeout(() => this.setState({comments: tempComments}), 2000)), 2000);
-        let comments =[];
+        // let tempComments = this.state.comments;
+        // setTimeout(() => this.setState({content: 'state updated', comments: []}, 
+        // () => setTimeout(() => this.setState({comments: tempComments}), 2000)), 2000);
+        let comments;
             if (this.state.comments) {
-                for (let comment of this.state.comments) {
-                    comments.push(<Comment {...comment}/>);
-                }
+                comments = this.state.comments.map((comment, index) => <Comment key={index} {...comment}/>)
             }
         return (
             <div className='card w-75 my-2'>
-                <div className='card-header bg-success text-white'>Username and Time</div>
+                <div className='card-header bg-primary text-white'>Username and Time</div>
                 <div className='card-body'>{this.state.content}</div>
                 <div className='card-footer'>
                     <LikeButton />
