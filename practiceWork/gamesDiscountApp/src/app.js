@@ -4,7 +4,7 @@ let searchButton = document.querySelector('.btn');
 let titleList = document.querySelectorAll('.gameElement');
 let storeInput = document.querySelector('#storeID');
 let pageNumberInput = document.getElementById('pageNumber').value;
-let pageNumber = 1;
+let pageNumber = 3;
 
 function popGameList() {
 $.get(`https://www.cheapshark.com/api/1.0/deals?pageNumber=${pageNumber}`, (data) => {
@@ -147,16 +147,19 @@ $.get(`https://www.cheapshark.com/api/1.0/deals?pageNumber=${pageNumber}`, (data
                 
                 //Create new Paragraphs
                 let newPara1 = document.createElement('p');
-                newPara1.innerHTML = `<strong>Original Price:</strong> $${gameList[i].normalPrice}`
+                newPara1.innerHTML = `<strong>Original Price:</strong> $${gameList[i].normalPrice}`;
+
                 let newPara2 = document.createElement('p');
-                newPara2.innerHTML = `<strong>Sale Price:</strong> $${gameList[i].salePrice}`
+                newPara2.innerHTML = `<strong>Sale Price:</strong> $${gameList[i].salePrice}`;
+
                 let newPara3 = document.createElement('p');
-                // newPara3.innerHTML = `<strong>Store:</strong> ${gameList[i].storeID}`
-                newPara3.innerHTML = `<strong>Store:</strong> ${storeName}`
+                newPara3.innerHTML = `<strong>Store:</strong> ${storeName}`;
+
                 //Adds bootstrap classes
-                newPara1.classList.add('my-1', 'mx-auto')
-                newPara2.classList.add('my-1', 'mx-auto')
-                newPara3.classList.add('my-1', 'mx-auto')
+                newPara3.classList.add('my-1', 'mx-auto');
+                newPara1.classList.add('my-1', 'mx-auto');
+                newPara2.classList.add('my-1', 'mx-auto');
+
                 //Append new Paragraphs 
                 newDiv.append(newPara1);
                 newDiv.append(newPara2);
