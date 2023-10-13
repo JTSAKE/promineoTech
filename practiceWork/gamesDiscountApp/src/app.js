@@ -4,7 +4,7 @@ let searchButton = document.querySelector('.btn');
 let titleList = document.querySelectorAll('.gameElement');
 let storeInput = document.querySelector('#storeID');
 let pageNumberInput = document.getElementById('pageNumber').value;
-let pageNumber = 3;
+let pageNumber = 5;
 
 function popGameList() {
 $.get(`https://www.cheapshark.com/api/1.0/deals?pageNumber=${pageNumber}`, (data) => {
